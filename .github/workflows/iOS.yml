@@ -1,0 +1,33 @@
+name: iOS
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - "**.md"
+      - "*.png"
+      - docs
+      - app
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          workspace: ios/ios.xcworkspace
+          scheme: ios
+          destination: name=iPhone 8
+          sdk: iphoneos
+          configuration: Debug
+          action: build
+
+
+
