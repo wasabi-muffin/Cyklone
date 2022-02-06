@@ -3,7 +3,8 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinDependencyHandler
 
 enum class Module(val path: String) {
     Test(":test-internal"),
-    Core(":mvi-multiplatform-core"),
+    Core(":cyklone"),
+    StateMachine(":cyklone-statemachine"),
     ;
 }
 

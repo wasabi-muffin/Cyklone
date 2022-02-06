@@ -1,4 +1,4 @@
-rootProject.name = "mvi-multiplatform"
+rootProject.name = "Cyklone"
 
 pluginManagement {
     repositories {
@@ -8,6 +8,6 @@ pluginManagement {
     }
 }
 
-include(":mvi-multiplatform-core")
-include(":mvi-multiplatform-statemachine")
+include(":cyklone")
+include(":cyklone-statemachine")
 include(":test-internal")

@@ -16,7 +16,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.gmvalentino.mvi.multiplatform"
+    group = "com.gmvalentino.cyklone"
     version = get("VERSION", "0.0.0")
 
     repositories {
