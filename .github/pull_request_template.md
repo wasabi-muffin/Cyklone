@@ -1,5 +1,5 @@
 <!-- Add issue link -->
-Issue: https://github.com/gmvalentino/mvi-multiplatform/issues/[issue number]
+Issue: https://github.com/gmvalentino8/Cyklone/issues/[issue number]
 
 ## [Platform]
 <!-- Select / Unselect the appropriate platforms -->

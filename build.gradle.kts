@@ -16,7 +16,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.gmvalentino.cyklone"
+    group = "io.github.gmvalentino8.cyklone"
     version = get("VERSION", "0.0.0")
 
     repositories {
