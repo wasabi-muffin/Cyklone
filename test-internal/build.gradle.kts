@@ -1,9 +1,6 @@
-buildTargets = setOf(BuildTarget.Android, BuildTarget.Ios)
+setupMultiplatform(publish = false)
 
-setupMultiplatform()
-setupLinter()
-
-androidConfig {
+android {
     packagingOptions {
         resources.excludes.add("**/*")
     }
@@ -26,9 +23,9 @@ kotlin {
                 api(kotlin("test"))
                 api(kotlin("test-common"))
                 api(kotlin("test-annotations-common"))
-                api(Deps.Test.kotest)
-                api(Deps.Test.turbine)
-                api(Deps.Kotlinx.coroutinesCore) {
+                api(Dependencies.Test.kotest)
+                api(Dependencies.Test.turbine)
+                api(Dependencies.Kotlinx.coroutinesCore) {
                     version { strictly(Versions.kotlinCoroutines) }
                 }
             }
@@ -37,10 +34,10 @@ kotlin {
         androidMain {
             dependencies {
                 api(kotlin("test-junit"))
-                api(Deps.Test.coroutinesTest)
-                api(Deps.Test.androidxJunit)
-                api(Deps.Test.androidxTestRunner)
-                api(Deps.Test.androidxTestRules)
+                api(Dependencies.Test.coroutinesTest)
+                api(Dependencies.Test.androidxJunit)
+                api(Dependencies.Test.androidxTestRunner)
+                api(Dependencies.Test.androidxTestRules)
             }
         }
     }

@@ -1,20 +1,18 @@
-buildTargets = setOf(BuildTarget.Android, BuildTarget.Ios)
-
 setupMultiplatform()
-setupLinter()
 
 kotlin {
     sourceSets {
         commonMain {
             dependencies {
-                implementation(Deps.Kotlinx.coroutinesCore)
-                api(Deps.Log.kermit)
+                implementation(Dependencies.Kotlinx.coroutinesCore) {
+                    version { strictly(Versions.kotlinCoroutines) }
+                }
             }
         }
 
         commonTest {
             dependencies {
-                implementation(project(":test-internal"))
+                project(Module.Test)
             }
         }
     }

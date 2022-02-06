@@ -1,9 +1,7 @@
 package com.gmvalentino.mvi.multiplatform.tests
 
-import app.cash.turbine.test
 import com.gmvalentino.mvi.multiplatform.components.ActionModifier
 import com.gmvalentino.mvi.multiplatform.components.ActionModifiers
-import com.gmvalentino.mvi.multiplatform.components.BaseStore
 import com.gmvalentino.mvi.multiplatform.components.IntentModifier
 import com.gmvalentino.mvi.multiplatform.components.IntentModifiers
 import com.gmvalentino.mvi.multiplatform.components.Modifiers
@@ -23,7 +21,6 @@ import com.gmvalentino.test.BaseTest
 import com.gmvalentino.test.awaitItemAssert
 import io.kotest.assertions.timing.eventually
 import io.kotest.matchers.shouldBe
-import io.kotest.matchers.types.shouldBeTypeOf
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.fail

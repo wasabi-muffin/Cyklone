@@ -1,9 +1,7 @@
 package com.gmvalentino.mvi.multiplatform.mock
 
-import com.gmvalentino.mvi.multiplatform.components.BaseProcessor
 import com.gmvalentino.mvi.multiplatform.contract.Action
 import com.gmvalentino.mvi.multiplatform.contract.Event
-import com.gmvalentino.mvi.multiplatform.contract.Result
 import com.gmvalentino.mvi.multiplatform.contract.State
 import kotlinx.coroutines.flow.Flow
 
