@@ -12,12 +12,13 @@ fun Project.setupMultiplatform(
 
     setupLinter()
 
+    if (publish) {
+        setupMavenPublication()
+    }
+
     buildTargets.setup<BuildTarget.Android> {
         plugins.apply("com.android.library")
         setupAndroid()
-        if (publish) {
-            setupMavenPublication()
-        }
     }
 
     repositories {
@@ -35,7 +36,7 @@ fun Project.setupMultiplatform(
 
         buildTargets.setup<BuildTarget.Android> {
             android {
-                publishAllLibraryVariants()
+                publishLibraryVariants("release")
             }
         }
 

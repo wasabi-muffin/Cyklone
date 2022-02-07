@@ -16,8 +16,8 @@ plugins {
 }
 
 allprojects {
-    group = "io.github.gmvalentino8.cyklone"
-    version = get("VERSION", "0.0.0")
+    group = "io.github.gmvalentino8"
+    version = getProperty("VERSION", "0.0.1")
 
     repositories {
         google()

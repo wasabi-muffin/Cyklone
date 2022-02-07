@@ -1,6 +1,8 @@
 *.iml
 .gradle
 /local.properties
+/publish.properties
+/artifacts
 /.idea
 .DS_Store
 /build
