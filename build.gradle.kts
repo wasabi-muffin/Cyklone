@@ -17,7 +17,7 @@ plugins {
 
 allprojects {
     group = "io.github.gmvalentino8"
-    version = getProperty("VERSION", "0.0.1")
+    version = getProperty("VERSION", "0.0.0")
 
     repositories {
         google()
